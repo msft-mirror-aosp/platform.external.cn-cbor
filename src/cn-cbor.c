@@ -53,7 +53,7 @@ static double decode_half(int half) {
 
 #ifndef CBOR_ALIGN_READS
 #define ntoh16p(p) (ntohs(*(unsigned short*)(p)))
-#define ntoh32p(p) (ntohl(*(unsigned long*)(p)))
+#define ntoh32p(p) (ntohl(*(uint32_t*)(p)))
 #else
 static uint16_t ntoh16p(unsigned char *p) {
     uint16_t tmp;
