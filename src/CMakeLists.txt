@@ -10,9 +10,6 @@ set ( cbor_srcs
       cn-get.c
 )
 
-if (align_reads)
-  add_definitions(-DCBOR_ALIGN_READS)
-endif()
 if (use_context)
   add_definitions(-DUSE_CBOR_CONTEXT)
 endif()
