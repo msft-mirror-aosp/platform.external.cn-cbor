@@ -29,4 +29,5 @@ cc_test {
     "test/cbor_test.c",
   ],
   shared_libs: [ "libcn-cbor", ],
+  gtest: false,
 }
