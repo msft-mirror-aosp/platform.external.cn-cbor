@@ -32,9 +32,6 @@ license {
 cc_library {
   name: "libcn-cbor",
   vendor_available: true,
-  vndk: {
-      enabled: true,
-  },
   srcs: [
     "src/cn-cbor.c",
     "src/cn-create.c",
