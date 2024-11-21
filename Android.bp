@@ -46,6 +46,7 @@ cc_library {
     ],
     unique_host_soname: true,
     host_supported: true,
+    c_std: "gnu99",
 }
 
 cc_test {
@@ -56,4 +57,5 @@ cc_test {
     ],
     shared_libs: ["libcn-cbor"],
     gtest: false,
+    c_std: "gnu99",
 }
